@@ -1,0 +1,5 @@
+---
+- name: reload supervisor
+  supervisorctl: name='{{ program_name }}' state=restarted
+  become: true
+  tags: superuser

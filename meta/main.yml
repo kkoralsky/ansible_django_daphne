@@ -1,0 +1,14 @@
+galaxy_info:
+  author: Karol Ossowski
+  description: Daphne worker for Django Channels
+
+  min_ansible_version: 1.2
+
+  platforms:
+  - name: Debian
+    versions:
+    - all
+  galaxy_tags: [ django daphne supervisor ]
+
+dependencies:
+  - role: django_supervisor

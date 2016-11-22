@@ -1,0 +1,13 @@
+---
+program_name: '{{ app }}_daphne'
+priority: 11
+
+supervisor_conf_tpl: _default_supervisor.conf.j2
+
+daphne_port: 8001
+daphne_host: 127.0.0.1
+daphne_http_timeout: 10
+daphne_ping_timeout: 10
+
+asgi_module: '{{ app_name }}.asgi'
+channel_layer: channel_layer
